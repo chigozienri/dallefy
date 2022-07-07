@@ -26,7 +26,7 @@ function dallefy (imageSrc) {
 }
 
 function watermark (size) {
-    var colors = ['#FFFF67', '#43FFFF', '#51DA4C', '#FF6F3D', '#3C46FF']
+    var colors = ['#FFFF67', '#43FFFF', '#51DA4C', '#3C46FF', '#FF6F3D']
     for (let i = 0; i < colors.length; i++) {
         ctx.fillStyle = colors[i];
         ctx.fillRect(canvas.width-(colors.length-i)*size, canvas.height - size, size, size)

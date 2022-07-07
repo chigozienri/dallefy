@@ -1,0 +1,11 @@
+#result {
+    display: none;
+}
+
+#hiddenCanvas {
+    display: none;
+}
+
+#dallefiedImage {
+    max-width: 100%;
+}

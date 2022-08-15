@@ -1,7 +1,7 @@
 const result = document.querySelector('#result');
 const dallefyButton = document.querySelector('#dallefy');
 const fileInput = document.querySelector('#file');
-const urlInput = document.querySelector('#url');
+// const urlInput = document.querySelector('#url');
 const canvas = document.querySelector('#canvas');
 const size = document.querySelector('#size');
 const download = document.querySelector('#download');
@@ -42,23 +42,23 @@ function readAndDallefy () {
             imageSrc = this.result;
             dallefy(imageSrc);
         }); 
-    } else if (urlInput.value) {
-        imageSrc = urlInput.value;
-        dallefy(imageSrc);
+    // } else if (urlInput.value) {
+    //     imageSrc = urlInput.value;
+    //     dallefy(imageSrc);
     } else {
         return
     }
     result.style.display = "block";
     fileInput.value = "";
-    urlInput.value = "";
+    // urlInput.value = "";
 }
 
 dallefyButton.addEventListener('click', () => {readAndDallefy()});
-urlInput.addEventListener('keypress', (e) => {
-    if (e.keyCode === 13) {
-        readAndDallefy();
-    }
-});
+// urlInput.addEventListener('keypress', (e) => {
+//     if (e.keyCode === 13) {
+//         readAndDallefy();
+//     }
+// });
 fileInput.addEventListener('change', () => {
     readAndDallefy();
 });
